@@ -43,7 +43,7 @@
       "keywords": [
         "Arduino",
         "Node MCU",
-	"Raspberry Pi"
+	"Raspberry Pi",
 	"CAN Boards"
       ]
     },
@@ -79,7 +79,7 @@
         "Ubuntu",
         "Git/GitHub",
         "g++",
-        "Yocto"
+        "Yocto",
 	"Bitbake"
       ]
     }
