@@ -3,108 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parth P. Dode - Resume</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Parth P. Dodë - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        .golden-ratio {
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            font-size: 14px;
+        }
+        .container {
             display: flex;
         }
-        .golden-ratio > div:first-child {
-            flex: 1.618;
-        }
-        .golden-ratio > div:last-child {
+        .main-content {
             flex: 1;
+            padding-right: 20px;
+        }
+        .sidebar {
+            flex: 0.618;
+            background-color: #f7f7f7;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        h1 {
+            color: #000;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #444;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+            font-size: 13px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+        }
+        .experience-item, .education-item {
+            margin-bottom: 15px;
+        }
+        .experience-item p, .education-item p {
+            margin: 0;
+            font-size: 13px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .sidebar li {
+            margin-bottom: 5px;
+        }
+        .sidebar h3 {
+            margin-top: 15px;
+            margin-bottom: 5px;
         }
     </style>
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
-    <div class="container mx-auto p-8">
-        <header class="mb-8">
-            <h1 class="text-4xl font-bold text-gray-800">Parth P. Dode</h1>
-            <p class="text-xl text-gray-600">Master's Student at McMaster University, Hamilton, ON</p>
-            <div class="mt-2">
-                <a href="mailto:dodep@mcmaster.ca" class="text-blue-600 hover:text-blue-800">dodep@mcmaster.ca</a> |
-                <a href="tel:+19055153765" class="text-blue-600 hover:text-blue-800">+1 905-515-3765</a> |
-                <a href="https://linkedin.com/in/parthdode" target="_blank" class="text-blue-600 hover:text-blue-800">LinkedIn</a> |
-                <a href="https://github.com/d80ep08th" target="_blank" class="text-blue-600 hover:text-blue-800">GitHub</a>
-            </div>
-        </header>
-
-        <div class="golden-ratio">
-            <div class="pr-8">
-                <section class="mb-6">
-                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Summary</h2>
-                    <p class="text-gray-700">Master of Engineering Design student with extensive experience in software development and DevOps seeking a 12 month Co-op term for Fall 2024. Highly curious individual, proficient in multiple programming languages, cloud services, containerization technologies, with the ability to use the full range of Github functionality.</p>
-                </section>
-
-                <section class="mb-6">
-                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Education</h2>
-                    <div class="mb-4">
-                        <h3 class="text-xl font-semibold">Master of Engineering Design, Product Design (Co-op)</h3>
-                        <p class="text-gray-600">McMaster University, Hamilton ON | Sep 2023 – Present</p>
-                        <p>Cumulative GPA: 3.57/4</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold">Bachelor of Engineering, Computer Engineering</h3>
-                        <p class="text-gray-600">Mumbai University, Mumbai MH | Jun 2016 – Oct 2020</p>
-                        <p>Cumulative GPA: 2.7/4</p>
-                    </div>
-                </section>
-
-                <section class="mb-6">
-                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Work Experience</h2>
-                    <div class="mb-4">
-                        <h3 class="text-xl font-semibold">Google Summer of Code 2022 student</h3>
-                        <p class="text-gray-600">The Linux Foundation, California, USA [Remote] | Apr 2022 - Sept 2022</p>
-                        <ul class="list-disc list-inside text-gray-700">
-                            <li>Remodeled Uptane OTA system documentation, improving accessibility for new contributors</li>
-                            <li>Mapped workflow of updating the TCU in Uptane's Kubernetes ecosystem, achieving 99.9% success rate in securing vehicle updates</li>
-                            <li>Reduced deployment time by 75% and eliminated 98% of manual configuration errors through automation</li>
-                        </ul>
-                    </div>
-                    <div class="mb-4">
-                        <h3 class="text-xl font-semibold">Backend Engineering and Developer Operations Contractor</h3>
-                        <p class="text-gray-600">Tattle Civic Technologies, Delhi, India [Remote] | Jan 2022 – Mar 2022</p>
-                        <ul class="list-disc list-inside text-gray-700">
-                            <li>Automated AWS S3 data recovery, ensuring 100% data recovery on accidental server crashes</li>
-                            <li>Improved backend operations, reducing server downtime to 1% through CRON job scheduling</li>
-                            <li>Integrated Github Actions with Pytest for automated testing</li>
-                        </ul>
-                    </div>
-                </section>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <h1>PARTH P. DODË</h1>
+            <div class="contact-info">
+                <p>dodep@mcmaster.ca | +1 905-515-3765</p>
+                <p>Linkedin.com/in/parthdode | Github.com/d80ep08th</p>
             </div>
 
-            <div>
-                <section class="mb-6">
-                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Skills</h2>
-                    <ul class="list-disc list-inside text-gray-700">
-                        <li>Programming: Python, Node.js, JavaScript, SQL, R, F#, C, Shell scripting</li>
-                        <li>Technologies: Docker, Kubernetes, AWS, Azure, Git, JIRA, Ansible, Nginx, Apache</li>
-                        <li>Systems: Linux (Ubuntu, Kali), Windows, Yocto, CI/CD pipelines</li>
-                        <li>Hardware: Raspberry Pi, Arduino</li>
-                        <li>Tools: AutoCAD Fusion 360, Prusa i3 MK3S+, Figma</li>
-                    </ul>
-                </section>
+            <h2>SUMMARY</h2>
+            <p>Master of Engineering Design student at McMaster University with extensive experience in software development, DevOps, and IoT technologies. Seeking a Software Developer Intern position for Fall 2024 at Sandvik, offering strong programming skills, experience with Linux environments, and a passion for learning and problem-solving.</p>
 
-                <section class="mb-6">
-                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Projects</h2>
-                    <div>
-                        <h3 class="text-xl font-semibold">Payload Deployment Design for Drones During Forest Fires</h3>
-                        <p class="text-gray-600">Canadian Emergency Responders Robotics Association [CERRA] | Jan 2024 – Present</p>
-                        <ul class="list-disc list-inside text-gray-700">
-                            <li>Prototyping with AutoCAD Fusion 360, 3D printing designs with Prusa i3 MK3S+</li>
-                            <li>Applying engineering design principles to solve real-world problems</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section class="mb-6">
-                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Certifications</h2>
-                    <ul class="list-disc list-inside text-gray-700">
-                        <li>Google Cybersecurity Professional Certificate (2023)</li>
-                    </ul>
-                </section>
+            <h2>EXPERIENCE</h2>
+            <div class="experience-item">
+                <h3>Google Summer of Code 2022 Student</h3>
+                <p>The Linux Foundation, California, USA [Remote] | Apr. 2022 - Sept. 2022</p>
+                <ul>
+                    <li>Remodeled Uptane OTA system documentation, improving accessibility for new contributors</li>
+                    <li>Mapped workflow of updating the Telematics Control Unit (TCU) in Uptane's Kubernetes ecosystem</li>
+                    <li>Reduced deployment time by 75% and eliminated 98% of manual configuration errors through automation</li>
+                    <li>Aided as a key contributor in validating feature implementation</li>
+                </ul>
             </div>
+
+            <div class="experience-item">
+                <h3>Backend Engineering and Developer Operations Contractor</h3>
+                <p>Tattle Civic Technologies, Delhi, India [Remote] | Jan. 2022 – Mar. 2022</p>
+                <ul>
+                    <li>Automated AWS S3 data recovery, ensuring 100% data recovery on accidental server crashes</li>
+                    <li>Improved backend operations, reducing server downtime to 1% through CRON job scheduling</li>
+                    <li>Integrated Github Actions for automated testing using Pytest</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Backend Engineering Contractor</h3>
+                <p>Rugpullindex.com, Berlin, Germany [Remote] | Aug. 2021 – Dec. 2021</p>
+                <ul>
+                    <li>Increased site traffic by 200% through implementation of SVG line graphs</li>
+                    <li>Developed a frontend design system in Node.js along with test automation in Jest framework</li>
+                    <li>Introduced GitHub Actions to automate manual labor and authorize release activities</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Developer Operations Contractor</h3>
+                <p>Resurface Labs, Colorado, USA [Remote] | Feb. 2021 – Jul. 2021</p>
+                <ul>
+                    <li>Collaborated with software developers to make bug fixes and deliver repositories demonstrating the business's API</li>
+                    <li>Implemented API in 15+ frameworks in 5 separate languages, reducing deployment time by 95%</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Google Summer of Code 2020 Student</h3>
+                <p>The Linux Foundation, California, USA [Remote] | Apr. 2020 – Sept. 2020</p>
+                <ul>
+                    <li>Integrated Siemens's "Jailhouse" hypervisor in Automotive Grade Linux Operating System (AGL OS)</li>
+                    <li>Tested embedded system design virtually with Qemu x86-64 and Raspberry Pi with CAN boards</li>
+                    <li>Merged 1100+ lines of embedded C source code, implementing JIRA for software development tracking</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Backend Engineering Intern</h3>
+                <p>AGS Transact Technologies, Navi Mumbai, India [Hybrid, Remote] | Dec. 2019 – Jan. 2020</p>
+                <ul>
+                    <li>Leveraged Azure cloud services to host C# .NET application with a MySQL database</li>
+                    <li>Implemented APIs & user authentication backend</li>
+                </ul>
+            </div>
+
+            <h2>PROJECTS</h2>
+            <div class="experience-item">
+                <h3>Payload Deployment Design for Drones During Forest Fires</h3>
+                <p>Canadian Emergency Responders Robotics Association [CERRA] | Jan. 2024 – Present</p>
+                <ul>
+                    <li>Prototyping with AutoCAD Fusion 360 and 3D printing designs with Prusa i3 MK3S+</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h2>EDUCATION</h2>
+            <div class="education-item">
+                <h3>Master of Engineering Design, Product Design (Co-op)</h3>
+                <p>McMaster University, Hamilton, ON | Sep. 2023 – Present</p>
+                <p>Cumulative GPA: 3.57/4</p>
+                <p>Relevant Coursework: Internet of Things & Industrial Internet of Things</p>
+            </div>
+
+            <div class="education-item">
+                <h3>Bachelor of Engineering, Computer Engineering</h3>
+                <p>Mumbai University, Mumbai, MH | Jun. 2016 – Oct. 2020</p>
+                <p>Cumulative GPA: 2.7/4</p>
+                <p>Relevant Coursework: Distributed Computing, Computer Networks</p>
+            </div>
+
+            <h2>SKILLS</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, C, C++, JavaScript, SQL, Shell scripting</li>
+                <li><strong>Operating Systems:</strong> Linux (Ubuntu), Windows, Yocto</li>
+                <li><strong>Tools & Technologies:</strong> Git, Docker, Kubernetes, AWS, Azure, JIRA, CI/CD pipelines</li>
+                <li><strong>Embedded Systems:</strong> Raspberry Pi, Arduino</li>
+                <li><strong>Communication Protocols:</strong> TCP/IP, Wi-Fi, Cellular</li>
+            </ul>
+
+            <h2>CERTIFICATIONS</h2>
+            <div class="education-item">
+                <h3>Google Cybersecurity Professional Certificate</h3>
+                <p>Jun. 2023 – Oct. 2023</p>
+            </div>
+
+            <h2>LANGUAGES</h2>
+            <ul>
+                <li>English (Fluent)</li>
+                <li>French (Basic, willing to improve)</li>
+            </ul>
         </div>
     </div>
 </body>
