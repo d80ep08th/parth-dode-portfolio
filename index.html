@@ -1,5 +1,111 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth P. Dode - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .golden-ratio {
+            display: flex;
+        }
+        .golden-ratio > div:first-child {
+            flex: 1.618;
+        }
+        .golden-ratio > div:last-child {
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <div class="container mx-auto p-8">
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-gray-800">Parth P. Dode</h1>
+            <p class="text-xl text-gray-600">Master's Student at McMaster University, Hamilton, ON</p>
+            <div class="mt-2">
+                <a href="mailto:dodep@mcmaster.ca" class="text-blue-600 hover:text-blue-800">dodep@mcmaster.ca</a> |
+                <a href="tel:+19055153765" class="text-blue-600 hover:text-blue-800">+1 905-515-3765</a> |
+                <a href="https://linkedin.com/in/parthdode" target="_blank" class="text-blue-600 hover:text-blue-800">LinkedIn</a> |
+                <a href="https://github.com/d80ep08th" target="_blank" class="text-blue-600 hover:text-blue-800">GitHub</a>
+            </div>
+        </header>
 
-{% include {{ site.theme-home }} %}
+        <div class="golden-ratio">
+            <div class="pr-8">
+                <section class="mb-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Summary</h2>
+                    <p class="text-gray-700">Master of Engineering Design student with extensive experience in software development and DevOps seeking a 12 month Co-op term for Fall 2024. Highly curious individual, proficient in multiple programming languages, cloud services, containerization technologies, with the ability to use the full range of Github functionality.</p>
+                </section>
+
+                <section class="mb-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Education</h2>
+                    <div class="mb-4">
+                        <h3 class="text-xl font-semibold">Master of Engineering Design, Product Design (Co-op)</h3>
+                        <p class="text-gray-600">McMaster University, Hamilton ON | Sep 2023 – Present</p>
+                        <p>Cumulative GPA: 3.57/4</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold">Bachelor of Engineering, Computer Engineering</h3>
+                        <p class="text-gray-600">Mumbai University, Mumbai MH | Jun 2016 – Oct 2020</p>
+                        <p>Cumulative GPA: 2.7/4</p>
+                    </div>
+                </section>
+
+                <section class="mb-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Work Experience</h2>
+                    <div class="mb-4">
+                        <h3 class="text-xl font-semibold">Google Summer of Code 2022 student</h3>
+                        <p class="text-gray-600">The Linux Foundation, California, USA [Remote] | Apr 2022 - Sept 2022</p>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>Remodeled Uptane OTA system documentation, improving accessibility for new contributors</li>
+                            <li>Mapped workflow of updating the TCU in Uptane's Kubernetes ecosystem, achieving 99.9% success rate in securing vehicle updates</li>
+                            <li>Reduced deployment time by 75% and eliminated 98% of manual configuration errors through automation</li>
+                        </ul>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="text-xl font-semibold">Backend Engineering and Developer Operations Contractor</h3>
+                        <p class="text-gray-600">Tattle Civic Technologies, Delhi, India [Remote] | Jan 2022 – Mar 2022</p>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>Automated AWS S3 data recovery, ensuring 100% data recovery on accidental server crashes</li>
+                            <li>Improved backend operations, reducing server downtime to 1% through CRON job scheduling</li>
+                            <li>Integrated Github Actions with Pytest for automated testing</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <section class="mb-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Skills</h2>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Programming: Python, Node.js, JavaScript, SQL, R, F#, C, Shell scripting</li>
+                        <li>Technologies: Docker, Kubernetes, AWS, Azure, Git, JIRA, Ansible, Nginx, Apache</li>
+                        <li>Systems: Linux (Ubuntu, Kali), Windows, Yocto, CI/CD pipelines</li>
+                        <li>Hardware: Raspberry Pi, Arduino</li>
+                        <li>Tools: AutoCAD Fusion 360, Prusa i3 MK3S+, Figma</li>
+                    </ul>
+                </section>
+
+                <section class="mb-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Projects</h2>
+                    <div>
+                        <h3 class="text-xl font-semibold">Payload Deployment Design for Drones During Forest Fires</h3>
+                        <p class="text-gray-600">Canadian Emergency Responders Robotics Association [CERRA] | Jan 2024 – Present</p>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>Prototyping with AutoCAD Fusion 360, 3D printing designs with Prusa i3 MK3S+</li>
+                            <li>Applying engineering design principles to solve real-world problems</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="mb-6">
+                    <h2 class="text-2xl font-semibold text-gray-800 mb-2">Certifications</h2>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Google Cybersecurity Professional Certificate (2023)</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
